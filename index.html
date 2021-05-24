@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Board Members</h1>
+    <div class="content">
+        <form id="add-cafe-form">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="city" id="city" placeholder="City">
+            <button>Add Member</button>
+            
+        </form>
+
+        <ul id="add-list"></ul>
+    </div>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDMv8gK2FDWfZCBtBGbqdtuAMZbioMLMkQ",
+    authDomain: "project1-6c1f2.firebaseapp.com",
+    projectId: "project1-6c1f2",
+    storageBucket: "project1-6c1f2.appspot.com",
+    messagingSenderId: "209152723361",
+    appId: "1:209152723361:web:a3ae5cd533054a2c5223e0",
+    measurementId: "G-EMNYT9MZRH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db=firebase.firestore();
+  db.settings({timestampsInSnapshot:true});
+</script>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
