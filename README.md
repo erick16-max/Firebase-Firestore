@@ -1,2 +1,2 @@
 # Firebase-Firestore
- firebase firestore with reltime dispalying of data using javascript
+ firebase firestore with reltime displaying of data using javascript
